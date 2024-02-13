@@ -14,18 +14,21 @@ def box(ln, isBlack):
         t.left(90)
     t.end_fill()
 
-x, y = 0, 0
-
 box_len = 50
+
+x, y = 0, 0
 
 time.sleep(2) # Start drawing
 
 t.speed(0)
 
-while True:
+def move_silently(x = 0, y = 0):
     t.penup()
     t.goto(x, y)
     t.pendown()
+
+while True:
+    move_silently(x, y)
     x += box_len
 
     is_black = False
