@@ -5,7 +5,7 @@ t = turtle.Turtle()
 s = turtle.Screen()
 
 s.bgcolor("black")
-t.pencolor("blue")
+t.pencolor("white")
 
 a, b = 0, 0
 
